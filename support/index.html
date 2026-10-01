@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0b1220" />
+    <meta
+      name="description"
+      content="Support and frequently asked questions for the Upliftic fuel uplift calculator."
+    />
+    <title>Upliftic — Support</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f4f7fb;
+        --surface: #ffffff;
+        --text: #172033;
+        --muted: #5d687a;
+        --border: #dce3ed;
+        --accent: #2563eb;
+        --accent-soft: #eaf1ff;
+        --shadow: 0 18px 50px rgba(31, 48, 76, 0.1);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b1220;
+          --surface: #111a2b;
+          --text: #eef3fb;
+          --muted: #a8b3c5;
+          --border: #26344b;
+          --accent: #7dabff;
+          --accent-soft: #172b50;
+          --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      main {
+        width: min(100% - 32px, 820px);
+        margin: 48px auto;
+        padding: clamp(28px, 6vw, 64px);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+      }
+
+      header {
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .eyebrow {
+        margin: 0 0 6px;
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 750;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 7vw, 3.25rem);
+        line-height: 1.08;
+        letter-spacing: -0.035em;
+      }
+
+      .effective-date {
+        margin: 12px 0 0;
+        color: var(--muted);
+      }
+
+      .summary {
+        margin: 28px 0 34px;
+        padding: 20px 22px;
+        background: var(--accent-soft);
+        border-left: 4px solid var(--accent);
+        border-radius: 12px;
+      }
+
+      section + section {
+        margin-top: 32px;
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 1.25rem;
+        line-height: 1.3;
+      }
+
+      p {
+        margin: 0 0 14px;
+      }
+
+      ul {
+        margin: 10px 0 0;
+        padding-left: 1.35rem;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      a {
+        color: var(--accent);
+        text-underline-offset: 0.18em;
+      }
+
+      h3 {
+        margin: 22px 0 6px;
+        font-size: 1.05rem;
+        line-height: 1.35;
+      }
+
+      code {
+        font-size: 0.92em;
+      }
+
+      footer {
+        margin-top: 40px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 520px) {
+        main {
+          width: 100%;
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Upliftic</p>
+        <h1>Support</h1>
+        <p class="effective-date">Fuel uplift calculator for pilots — iPhone and Apple Watch</p>
+      </header>
+
+      <div class="summary">
+        <strong>Need help?</strong> Email
+        <a href="mailto:kokpit250@gmail.com?subject=Upliftic%20support">kokpit250@gmail.com</a>
+        with your question, a bug report or an idea. It helps to include the app
+        version (shown in Settings) and your device.
+      </div>
+
+      <section>
+        <h2>Calculations</h2>
+
+        <h3>How is the uplift calculated?</h3>
+        <p>
+          Uplift in litres = (Target fuel − Fuel on board) × density constant.
+          The density constant defaults to 0.567 L/lb and can be changed in
+          Settings.
+        </p>
+
+        <h3>What does the ReFuelEU check do?</h3>
+        <p>
+          The policy minimum uplift is (Trip fuel + Taxi fuel) × 90% × density
+          constant. The result turns green when your uplift meets it and red
+          when it does not. Trip fuel is optional; without it the check is not
+          run and the result stays blue. Under Trip Fuel, Upliftic also shows the
+          highest trip fuel that would still comply.
+        </p>
+
+        <h3>What is the Departure ICAO field?</h3>
+        <p>
+          It is optional. Enter the four-letter code of your departure airport
+          and Upliftic checks it against the European Commission's list of Union
+          airports in scope of ReFuelEU Aviation, which is built into the app.
+          If the airport is not on the list, the result turns grey and Trip Fuel
+          is not needed. The Commission publishes the list for information only:
+          an airport missing from it is not automatically exempt.
+        </p>
+      </section>
+
+      <section>
+        <h2>Apple Watch</h2>
+
+        <h3>The app does not appear on my watch</h3>
+        <p>
+          The watch app is installed together with the iPhone app. If it is
+          missing, open the Watch app on your iPhone, scroll to
+          <strong>Available Apps</strong> and tap <strong>Install</strong> next to
+          Upliftic. To have it install automatically in future, turn on
+          <strong>Automatic App Install</strong> under General. The watch app
+          needs watchOS 10 or later.
+        </p>
+
+        <h3>How do I add a complication?</h3>
+        <p>
+          Touch and hold the watch face, tap <strong>Edit</strong>, swipe to
+          <strong>Complications</strong>, choose a slot and pick Upliftic.
+          <strong>Uplift</strong> shows the current uplift in litres and opens the
+          result; <strong>New uplift</strong> opens the first input, fuel on board.
+        </p>
+
+        <h3>Do the iPhone and the watch stay in sync?</h3>
+        <p>
+          Yes. Fuel on board, target, trip and taxi fuel are exchanged directly
+          between your iPhone and your paired Apple Watch, and the most recent
+          change wins.
+        </p>
+      </section>
+
+      <section>
+        <h2>Privacy</h2>
+        <p>
+          Upliftic works offline, needs no account and collects no data. See the
+          <a href="../">Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Important</h2>
+        <p>
+          Upliftic is a reference aid, not certified avionics. Always verify your
+          figures and follow your company SOPs and aircraft documentation when
+          planning fuel.
+        </p>
+      </section>
+
+      <footer>
+        <strong>Developer:</strong> Filip Waikiki ·
+        <a href="../">Privacy Policy</a>
+      </footer>
+    </main>
+  </body>
+</html>
